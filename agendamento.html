@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento de Vistoria</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header simples -->
+  <header class="header">
+       <nav class="nav container">
+      <div class="logo">Vistoria Segura</div>
+      <div class="nav-menu"></div>
+      
+        <a href="index.html" style="color: white; text-decoration: none;">← Voltar</a>
+     
+         <!-- Botão de alternância de tema -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+        🌙
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- Chat de agendamento -->
+  <main class="main-content">
+    <section class="section section-gray">
+      <div class="container">
+        <h2 class="section-title">Agende Sua Vistoria</h2>
+        <div class="card">
+          <div id="chat-box" class="chat-box" style="max-height: 300px; overflow-y: auto; margin-bottom: 1rem;">
+            <!-- As mensagens vão aparecer aqui -->
+          </div>
+          <div class="chat-input-container" style="display: flex; gap: 0.5rem;">
+            <input type="text" id="chat-input" placeholder="Digite sua resposta..." style="flex: 1; padding: 0.5rem; border-radius: 0.5rem; border: 1px solid #ccc;">
+            <button id="chat-send" class="cta-button">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/chat.js"></script>
+</body>
+</html>
